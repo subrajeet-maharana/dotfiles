@@ -1,9 +1,17 @@
 local options = {
   formatters_by_ft = {
     lua = { "stylua" },
-    go = { "goimports", "gofmt" },
-    -- css = { "prettier" },
-    -- html = { "prettier" },
+    python = { "black" },
+    javascript = { "prettier" },
+    typescript = { "prettier" },
+    html = { "prettier" },
+    css = { "prettier" },
+    json = { "prettier" },
+    c = { "clang-format" },
+    cpp = { "clang-format" },
+    go = { "gofmt" }, -- html = { "prettier" },
+    java = {},
+    yaml = { "prettier" },
   },
 
   format_on_save = {

@@ -1,6 +1,39 @@
+# General Formatting
 column_width = 120
 line_endings = "Unix"
-indent_type = "Spaces"
-indent_width = 2
+indent_type = "Spaces"  # Most open-source projects prefer spaces over tabs
+indent_width = 4        # Default, but can be adjusted per project
 quote_style = "AutoPreferDouble"
 call_parentheses = "None"
+
+# Code Readability
+max_blank_lines = 1
+trim_trailing_whitespace = true
+insert_final_newline = true
+align_assignments = false  # Avoid forced alignment in open-source projects
+collapse_empty_lines = true
+
+# JavaScript & TypeScript
+trailing_commas = "Always"  # Common in modern JS/TS for better diffs
+
+# Open-Source Specific Indentation Rules
+[language.go]
+indent_width = 4  # Standard for Go
+
+[language.yaml]
+indent_width = 4  # Standard for Kubernetes, OpenAPI, etc.
+
+[language.json]
+indent_width = 4  # Common JSON standard
+
+[language.python]
+indent_width = 4  # Follows PEP 8
+
+[language.rust]
+indent_width = 4  # Rustfmt default
+
+[language.solidity]
+indent_width = 4  # Solidity best practices
+
+[language.markdown]
+wrap_width = 80   # Common Markdown width for readability
