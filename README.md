@@ -1,0 +1,1 @@
+- Use GNU Stow to create sym links in the machine.
