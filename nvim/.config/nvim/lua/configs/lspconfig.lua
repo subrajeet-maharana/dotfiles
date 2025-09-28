@@ -49,11 +49,11 @@ end
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
-    lspconfig[lsp].setup {
+    vim.lsp.config(lsp, {
         on_attach = on_attach,
         on_init = nvlsp.on_init,
         capabilities = nvlsp.capabilities,
-    }
+    })
 end
 
 -- Define :Format command

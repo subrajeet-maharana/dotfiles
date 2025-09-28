@@ -195,3 +195,4 @@ bindsym Ctrl+Mod1+q exec systemctl poweroff
 bindsym Ctrl+Mod1+e exec systemctl reboot
 exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/IslandNight.jpg
 exec_always --no-startup-id xrandr --output eDP --primary --mode 1920x1080 --rate 144.0 --output HDMI-1-0 --mode 1920x1080 --rate 180.00 --left-of eDP
+exec_always --no-startup-id copyq start
