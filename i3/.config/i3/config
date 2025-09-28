@@ -185,10 +185,13 @@ bar {
         status_command i3status
 }
 
-# Custom by Subrajeet
+# Custom by Subrajeet Maharana
 exec xinput set-prop "ELAN0752:00 04F3:31C2 Touchpad" "libinput Tapping Enabled" 1
-font pango:MesloLGS Nerd Font Mono Bold 9
+# font pango:MesloLGS Nerd Font Mono Bold 9
 # bindsym Mod4+Mod1+l exec i3lock -i ~/Pictures/Wallpapers/i3LockScreen.png
-bindsym Mod4+Mod1+l exec i3lock -c 000000
+bindsym Mod4+Mod1+l exec i3lock -c 282a36
+bindsym Ctrl+Mod1+l exec systemctl suspend
 bindsym Ctrl+Mod1+q exec systemctl poweroff
+bindsym Ctrl+Mod1+e exec systemctl reboot
 exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/IslandNight.jpg
+exec_always --no-startup-id xrandr --output eDP --primary --mode 1920x1080 --rate 144.0 --output HDMI-1-0 --mode 1920x1080 --rate 180.00 --left-of eDP

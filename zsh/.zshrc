@@ -13,7 +13,7 @@ source $ZSH/oh-my-zsh.sh
 # =====================
 # PATH CONFIGURATIONS
 # =====================
-export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="/opt/nvim-linux-x86_64/bin:$PATH"
 export PATH="$PATH:/usr/local/besu-24.12.2/bin"
 
 # =====================
